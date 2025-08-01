@@ -45,4 +45,9 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function spins()
+    {
+        return $this->hasMany(Spin::class);
+    }
 }
